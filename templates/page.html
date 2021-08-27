@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+</head>
+<body class="container" >
+  <div style="background-color: rgb(231, 227, 227); width: 70; ">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Student's corner</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'quize' %}">Smartie</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link active" aria-current="page" href="{% url 'notes' %}">
+                  To-do-list
+                </a>
+        
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'accept' %}">Resume</a>
+                
+              </li>
+                            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'adnotes' %}">NOTES</a>
+                
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+              <a class="nav-link active" aria-current="page" href="{% url 'login' %}" >login</a>
+              
+             <button class="btn btn-outline-success" type="secondary"> <a href="{% static 'signup.html' %}">SignUp</button></a>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7">
+            <a href="{% url 'notes' %}" class="button"><h2 class="featurette-heading">To-Do-List<span class="text-muted">It’ll blow your mind.</span></h2></a>
+            <p class="lead">this featurette manage the student daily scedule.</p>
+          </div>
+          <div class="col-md-5">
+            <img src="https://source.unsplash.com/1200x400/weekly?computer,laptop"  class="bd-placeholder-img" width="500" height="500" alt="...">
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <a href="{% url 'accept' %}" class="button"><h2 class="featurette-heading">Resume<span class="text-muted">Checkmate</span></h2></a>
+            <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img src="https://source.unsplash.com/1200x400/weekly?nature,python"  class="bd-placeholder-img" width="500" height="500" alt="...">
+    
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7">
+               <a href="{% url 'quize' %}" class="button"><h2 class="featurette-heading">Smartiee<span class="text-muted">It’ll blow your mind.</span></h2></a>
+              <p class="lead">this featurette manage the student daily scedule.</p>
+            </div>
+            <div class="col-md-5">
+              <img src="https://source.unsplash.com/1200x400/weekly?computer,laptop"  class="bd-placeholder-img" width="500" height="500" alt="...">
+            </div>
+          </div>
+          <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Report Card <span class="text-muted">Checkmate</span></h2>
+            <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img src="https://source.unsplash.com/1200x400/weekly?nature,python"  class="bd-placeholder-img" width="500" height="500" alt="...">
+    
+          </div>
+        </div>
+          <hr class="featurette-divider">
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Profile <span class="text-muted">See for yourself..</span></h2>
+            <p class="lead">We have put this feature for students so the they can check there performance</p>
+          </div>
+          <div class="col-md-5">
+           
+            <img src="https://source.unsplash.com/1200x400/weekly?nature,book"  class="bd-placeholder-img" width="500" height="500" alt="...">
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <!-- /END THE FEATURETTES -->
+    
+      </div>
+      <div class="container">
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>© 2017–2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+          </footer>
+      </div>
+    </div>
+</body>
+</html>
